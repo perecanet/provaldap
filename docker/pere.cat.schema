@@ -1,5 +1,6 @@
 attributetype ( 1.1.2.1.1 NAME 'x-idcat'
 	DESC 'identificador soci'
+	EQUALITY caseIgnoreMatch
 	SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
 	SINGLE-VALUE )
 

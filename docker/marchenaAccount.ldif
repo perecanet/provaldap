@@ -1,0 +1,28 @@
+dn: x-idcat=2,ou=socis,dc=pere,dc=cat
+changetype: add
+add: objectclass
+objectclass: marchenaAccount
+-
+add: delictes
+delictes: molts
+-
+add: anyscondemna
+anyscondemna: 15
+-
+add: galeres
+galeres: TRUE
+
+dn: x-idcat=3,ou=socis,dc=pere,dc=cat
+changetype: add
+add: objectclass
+objectclass: marchenaAccount
+-
+add: delictes
+delictes: moltissims
+-
+add: anyscondemna
+anyscondemna: 20
+-
+add: galeres
+galeres: TRUE
+
