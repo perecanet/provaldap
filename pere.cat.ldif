@@ -1,0 +1,59 @@
+dn: dc=pere,dc=cat
+dc: pere
+description: socis organitzacio associativa
+objectClass: dcObject
+objectClass: organization
+o: pere.cat
+
+dn: ou=socis,dc=pere,dc=cat
+ou: socis
+description: socis de la organitzacio
+objectclass: organizationalunit
+
+dn: x-idcat=1,ou=socis,dc=pere,dc=cat
+objectclass: inetOrgPerson
+objectclass: indepeOrgPerson
+cn: soci1
+x-idcat: 1
+sn: soci1
+x-sardanes: FALSE
+x-foto: ///var/tmp/foto.jpg
+x-lema: finns la victoria sempre
+homephone: 555-222-0001
+mail: soci1@pere.cat
+description: soci
+ou: socis
+homeDirectory: /tmp/home/socis/soci1
+userPassword: {SHA}BJf+TWdP43GUpvywiRPllu9qMH8=
+
+dn: x-idcat=2,ou=socis,dc=pere,dc=cat
+objectclass: inetOrgPerson
+objectclass: indepeOrgPerson
+cn: soci2
+x-idcat: 2
+sn: soci2
+x-sardanes: FALSE
+x-foto: ///var/tmp/foto.jpg
+x-lema: espanyolet
+homephone: 555-222-0002
+mail: soci2@pere.cat
+description: soci
+ou: socis
+homeDirectory: /tmp/home/socis/soci2
+userPassword: {SHA}p2WWdWaMKzTwpFbbqlCCADQNw2w=
+
+dn: idcat=3,ou=socis,dc=pere,dc=cat
+objectclass: inetOrgPerson
+objectclass: indepeOrgPerson
+cn: soci3
+x-idcat: 3
+sn: soci3
+x-sardanes: TRUE
+x-foto: ///var/tmp/foto.jpg
+x-lema: acab
+homephone: 555-222-0003
+mail: soci3@pere.cat
+description: soci
+ou: socis
+homeDirectory: /tmp/home/socis/soci3
+userPassword: {SHA}bwkliKQ2ZeJKeReSS6IW9Q+3c30=

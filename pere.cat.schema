@@ -1,0 +1,26 @@
+attributetype ( 1.1.2.1.1 NAME 'x-idcat'
+	DESC 'identificador soci'
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
+	SINGLE-VALUE )
+
+attributetype ( 1.1.2.1.2 NAME 'x-sardanes'
+        DESC 'sap ballar sardanes'
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+	SINGLE-VALUE )
+
+attributetype ( 1.1.2.1.4 NAME 'x-foto'
+	DESC 'foto del soci'
+        SYNTAX 1.3.6.1.4.1.1466.115.121.1.40 )
+
+attributetype ( 1.1.2.1.5 NAME 'x-lema'
+        DESC 'lema del soci'
+        SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+        SINGLE-VALUE )
+
+objectclass ( 1.1.2.2.1 NAME 'indepeOrgPerson'
+	DESC 'socis'
+	SUP inetOrgPerson
+	STRUCTURAL
+	MUST x-idcat
+	MAY ( x-sardanes $ x-foto $ x-lema ) )
+
